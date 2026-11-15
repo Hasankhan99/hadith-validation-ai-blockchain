@@ -1,0 +1,40 @@
+binary oof LR
+binary oof RF
+binary oof SVM
+binary oof CNB
+binary OOF primary by alpha {0.0: np.float64(0.8867), 0.25: np.float64(0.8545), 0.5: np.float64(0.7577), 0.75: np.float64(0.6156), 1.0: np.float64(0.4538)} -> chosen 0.0
+ternary oof LR
+ternary oof RF
+ternary oof SVM
+ternary oof CNB
+ternary OOF primary by alpha {0.0: np.float64(0.6612), 0.25: np.float64(0.6772), 0.5: np.float64(0.6432), 0.75: np.float64(0.5424), 1.0: np.float64(0.3911)} -> chosen 0.25
+                                  mean     std
+task    run           metric                  
+binary  CONS6-alpha0  macro_f1  0.9454  0.0024
+                      mawdu_f1  0.9006  0.0043
+        CONS6-chosen  macro_f1  0.9454  0.0024
+                      mawdu_f1  0.9006  0.0043
+        M6-CNB        macro_f1  0.8670  0.0000
+                      mawdu_f1  0.7602  0.0000
+        M6-LR         macro_f1  0.8874  0.0000
+                      mawdu_f1  0.7985  0.0000
+        M6-RF         macro_f1  0.9164  0.0008
+                      mawdu_f1  0.8474  0.0014
+        M6-SVM        macro_f1  0.9447  0.0000
+                      mawdu_f1  0.8991  0.0000
+        OOF-alpha0.0  mawdu_f1  0.8867     NaN
+        OOF-alpha0.25 mawdu_f1  0.8545     NaN
+        OOF-alpha0.5  mawdu_f1  0.7577     NaN
+        OOF-alpha0.75 mawdu_f1  0.6156     NaN
+        OOF-alpha1.0  mawdu_f1  0.4538     NaN
+ternary CONS6-alpha0  macro_f1  0.6746  0.0031
+        CONS6-chosen  macro_f1  0.7010  0.0025
+        M6-CNB        macro_f1  0.5893  0.0000
+        M6-LR         macro_f1  0.6563  0.0000
+        M6-RF         macro_f1  0.6079  0.0020
+        M6-SVM        macro_f1  0.6734  0.0000
+        OOF-alpha0.0  macro_f1  0.6612     NaN
+        OOF-alpha0.25 macro_f1  0.6772     NaN
+        OOF-alpha0.5  macro_f1  0.6432     NaN
+        OOF-alpha0.75 macro_f1  0.5424     NaN
+        OOF-alpha1.0  macro_f1  0.3911     NaN

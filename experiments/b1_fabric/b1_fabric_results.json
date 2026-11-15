@@ -1,0 +1,119 @@
+{
+  "run": "mvmzvh7t",
+  "digests": {
+    "LR": "67660f69d28736e71110399ec60237835bda7a6cfc60186b522e767c7bd0db4c",
+    "RF": "3d44d9e06e4060b5c35dc81bca15e2b90ba3e036187b1959c9d76f49a6781d09",
+    "SVM": "4ddac549cbd4718e2f87b2d430a9223816c1a78734252b70b70b80e02d7e6e0b",
+    "CAMeLBERT": "4990d7839586cbdb8e15f6c75cc5d26c154232d71b73f9994f4b87ac0e4ee9f6",
+    "AraBERT": "d218a904cb9a1e1f3e409e1f1bf2c65deb8cd4ec886791bf6bb7dc09ca16990f"
+  },
+  "security": [
+    {
+      "test": "valid consensus record committed and retrievable",
+      "rejected": false,
+      "expected_message_found": true,
+      "message": null
+    },
+    {
+      "test": "one hex digit of the LR digest altered",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, SECURITY ALERT: model LR weight hash mismatch, tampering detected"
+    },
+    {
+      "test": "registered model (RF) omitted from submission",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, SECURITY ALERT: registered model RF missing from submission"
+    },
+    {
+      "test": "unregistered model added to submission",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, SECURITY ALERT: model EVIL not registered on ledger"
+    },
+    {
+      "test": "verdict missing for a registered model",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, missing verdict for model SVM"
+    },
+    {
+      "test": "replay of an existing validation id",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, validation mvmzvh7t-ok1 already recorded"
+    },
+    {
+      "test": "consensus label outside {0,1,2}",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, invalid consensus result 3"
+    },
+    {
+      "test": "confidence outside [0,1]",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, confidence 1.500000 outside [0,1]"
+    },
+    {
+      "test": "model registration by non-admin organisation (Org2)",
+      "rejected": true,
+      "expected_message_found": true,
+      "message": "chaincode response 500, access denied: Org2MSP may not register models"
+    }
+  ],
+  "note": "synthetic payloads; see header",
+  "security_pass": 9,
+  "security_total": 9,
+  "sequential_submit": {
+    "n": 200,
+    "mean_ms": 2727.1061530000006,
+    "p50_ms": 2075.0214999999152,
+    "p95_ms": 6280.725599999947,
+    "p99_ms": 10147.146999999997,
+    "max_ms": 10274.786499999987
+  },
+  "concurrent": [
+    {
+      "concurrency": 10,
+      "submitted": 500,
+      "committed": 500,
+      "failed": 0,
+      "elapsed_s": 11.508574199999915,
+      "tps": 43.4458683856775,
+      "latency": {
+        "n": 500,
+        "mean_ms": 229.9521637999995,
+        "p50_ms": 213.0810000000056,
+        "p95_ms": 341.5150999999605,
+        "p99_ms": 676.6034000000218,
+        "max_ms": 694.3347000000067
+      }
+    },
+    {
+      "concurrency": 50,
+      "submitted": 500,
+      "committed": 500,
+      "failed": 0,
+      "elapsed_s": 8.747228899999987,
+      "tps": 57.16095985552644,
+      "latency": {
+        "n": 500,
+        "mean_ms": 857.4103858000008,
+        "p50_ms": 789.0488999999361,
+        "p95_ms": 1325.763399999938,
+        "p99_ms": 1485.233899999992,
+        "max_ms": 1527.392899999977
+      }
+    }
+  ],
+  "query": {
+    "n": 300,
+    "mean_ms": 8.895761000001414,
+    "p50_ms": 8.068300000042655,
+    "p95_ms": 12.310199999948964,
+    "p99_ms": 18.222999999998137,
+    "max_ms": 61.800900000031106
+  }
+}

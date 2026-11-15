@@ -1,0 +1,94 @@
+{
+ "inputs": {
+  "data/processed_v2/processed_train.csv": "17f8ad93086fbe50054ab026f25781eaac4ed10068066180652c5a468ed64fe1",
+  "data/processed_v2/processed_val.csv": "5809c659f66ca675f71c4cb2e0a6039e8861c20eccd55c7c3fce529af29a2ca5",
+  "data/processed_v2/processed_test.csv": "5632272231581c0a2bcfc9777756602f93a4d13a608cb177b810527f9a9e1bfe",
+  "data/processed_3class/processed_train.csv": "a0e00d5b735935ec06ca38a2cb963071bb36f618592392956dfbf3a1b6f89750",
+  "data/processed_3class/processed_val.csv": "818a73548ad9c32a761d5ceb5a352fadb3697c79f58460a46e1bbc1998f7cfc0",
+  "data/processed_3class/processed_test.csv": "2292c7a63f8c450fa9050bba306c55adff1b07aa92419c8b35c087c5ebb121e4"
+ },
+ "tasks": {
+  "binary": {
+   "alpha": 0.0,
+   "prior": [
+    0.09050247430529121,
+    0.9094975256947088
+   ],
+   "val_primary_mean_std": {
+    "M-LR": [
+     0.7985347985347986,
+     0.0
+    ],
+    "M-RF": [
+     0.8473849149347817,
+     0.0014365519405448168
+    ],
+    "M-SVM": [
+     0.8991228070175439,
+     0.0
+    ],
+    "M-CNB": [
+     0.7602339181286549,
+     0.0
+    ],
+    "M-B6": [
+     0.8828451882845189,
+     0.0
+    ],
+    "CONS-classical": [
+     0.9006431175119648,
+     0.004323209750750104
+    ]
+   },
+   "tau": {
+    "CONS-classical": 0.75
+   },
+   "headline": "CONS-classical",
+   "transformers_present": []
+  },
+  "ternary": {
+   "alpha": 0.25,
+   "prior": [
+    0.0790720878024445,
+    0.12629916022283197,
+    0.7946287519747235
+   ],
+   "val_primary_mean_std": {
+    "M-LR": [
+     0.6562910731399537,
+     0.0
+    ],
+    "M-RF": [
+     0.6079303740146615,
+     0.0020455194324354954
+    ],
+    "M-SVM": [
+     0.67339663647871,
+     0.0
+    ],
+    "M-CNB": [
+     0.5893170625176506,
+     0.0
+    ],
+    "M-B6": [
+     0.723639466748128,
+     0.0
+    ],
+    "CONS-classical": [
+     0.7010383495525653,
+     0.0024632739533351745
+    ]
+   },
+   "tau": {
+    "CONS-classical": 0.45
+   },
+   "headline": "M-B6",
+   "transformers_present": []
+  }
+ },
+ "scripts": {
+  "experiments/final_test.py": "1b71e6ab6c7c0bfdd3a7ddbc35875745b09b1f88e1a3df1ea80205b92a592799",
+  "src_v2/consensus_soft.py": "d67c1bbc4c52f46393fe09ef8a9d2e5f9beec453083b30b8cbe091fb6900f0d4",
+  "experiments/r6_val_results.csv": "47592774c507bec864a547eb175b833608d26af4931cdaa8551032e673e2c2fa"
+ }
+}

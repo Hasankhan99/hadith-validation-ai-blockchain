@@ -1,0 +1,7 @@
+# Classical pipeline, frozen evaluation and verification (versions used for the frozen results)
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.1
+scikit-learn==1.6.1
+joblib==1.4.2
+matplotlib==3.11.2

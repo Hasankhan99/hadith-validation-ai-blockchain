@@ -1,0 +1,34 @@
+binary fitted LR
+binary fitted RF
+binary fitted SVM
+binary fitted CNB
+binary: alpha=0.0  chosen tau=0.75
+  tau=0.35 coverage=1.0000 covered_primary=0.9006
+  tau=0.40 coverage=1.0000 covered_primary=0.9006
+  tau=0.45 coverage=1.0000 covered_primary=0.9006
+  tau=0.50 coverage=1.0000 covered_primary=0.9006
+  tau=0.55 coverage=0.9908 covered_primary=0.9207
+  tau=0.60 coverage=0.9799 covered_primary=0.9334
+  tau=0.65 coverage=0.9687 covered_primary=0.9429
+  tau=0.70 coverage=0.9531 covered_primary=0.9525
+  tau=0.75 coverage=0.9309 covered_primary=0.9603
+  tau=0.80 coverage=0.8947 covered_primary=0.9661
+  tau=0.85 coverage=0.8389 covered_primary=0.9698
+  tau=0.90 coverage=0.7405 covered_primary=0.9699
+ternary fitted LR
+ternary fitted RF
+ternary fitted SVM
+ternary fitted CNB
+ternary: alpha=0.25  chosen tau=0.45
+  tau=0.35 coverage=0.9995 covered_primary=0.7016
+  tau=0.40 coverage=0.9869 covered_primary=0.7110
+  tau=0.45 coverage=0.9405 covered_primary=0.7266
+  tau=0.50 coverage=0.8584 covered_primary=0.7291
+  tau=0.55 coverage=0.7648 covered_primary=0.7414
+  tau=0.60 coverage=0.6494 covered_primary=0.7405
+  tau=0.65 coverage=0.5190 covered_primary=0.7671
+  tau=0.70 coverage=0.3834 covered_primary=0.8003
+  tau=0.75 coverage=0.2442 covered_primary=0.8531
+  tau=0.80 coverage=0.1300 covered_primary=0.9097
+  tau=0.85 coverage=0.0548 covered_primary=0.9483
+  tau=0.90 coverage=0.0187 covered_primary=0.8624

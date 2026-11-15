@@ -1,0 +1,10 @@
+binary val fitted LR
+binary val fitted RF
+binary val fitted SVM
+binary val fitted CNB
+binary cached (0.9006431175119648, 0.003866796353466862) [0.9006431175119648, 0.004323209750750104]
+ternary val fitted LR
+ternary val fitted RF
+ternary val fitted SVM
+ternary val fitted CNB
+ternary cached (0.7010383495525653, 0.002203219202744838) [0.7010383495525653, 0.0024632739533351745]

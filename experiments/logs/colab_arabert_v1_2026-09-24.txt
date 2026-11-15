@@ -1,0 +1,13 @@
+# Excerpt (verbatim metric lines) of the user's Colab run of colab/train_arabert.py, 2026-09-24.
+# Data: v1 processed_train.csv / processed_val.csv (inverted labels), text column normalized_text.
+# Config (from script + log): aubmindlab/bert-base-arabertv02, max_length=128, lr=2e-5, bs=16, epochs=3,
+# weight_decay=0.01, fp16, load_best_model_at_end on weighted F1, Trainer default seed=42. GPU: Tesla T4.
+PyTorch Version: 2.11.0+cu128
+GPU Device: Tesla T4
+Loaded 21056 training samples and 2632 validation samples.
+{'eval_loss': 0.052152570337057114, 'eval_accuracy': 0.9874620060790273, 'eval_precision': 0.987298302311478, 'eval_recall': 0.9874620060790273, 'eval_f1': 0.9873096126082102, 'eval_runtime': 4.8531, 'eval_samples_per_second': 542.338, 'eval_steps_per_second': 17.103, 'epoch': 1.0}
+{'eval_loss': 0.04960980266332626, 'eval_accuracy': 0.9908814589665653, 'eval_precision': 0.9908094416218044, 'eval_recall': 0.9908814589665653, 'eval_f1': 0.9907618225899909, 'eval_runtime': 4.808, 'eval_samples_per_second': 547.423, 'eval_steps_per_second': 17.263, 'epoch': 2.0}
+{'eval_loss': 0.048020292073488235, 'eval_accuracy': 0.9908814589665653, 'eval_precision': 0.9909176237121029, 'eval_recall': 0.9908814589665653, 'eval_f1': 0.9908979306761883, 'eval_runtime': 4.7331, 'eval_samples_per_second': 556.086, 'eval_steps_per_second': 17.536, 'epoch': 3.0}
+{'train_runtime': 614.5023, 'train_samples_per_second': 102.795, 'train_steps_per_second': 6.425, 'train_loss': 0.05476873739798985, 'epoch': 3.0}
+File: ./arabert_hadith_model/model.safetensors
+SHA-256: 2e71aae61268f21a1864c389af69effd806af7d808d1d807eb42faac6956be62

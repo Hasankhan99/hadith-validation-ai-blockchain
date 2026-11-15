@@ -1,0 +1,28 @@
+registered 5 models
+PASS  valid record committed Sahih f3d8b5d478f8
+PASS  one hex digit of the LR digest altered  -> chaincode response 500, SECURITY ALERT: model LR weight hash mismatch, tampering detected
+PASS  registered model (RF) omitted from submission  -> chaincode response 500, SECURITY ALERT: registered model RF missing from submission
+PASS  unregistered model added to submission  -> chaincode response 500, SECURITY ALERT: model EVIL not registered on ledger
+PASS  verdict missing for a registered model  -> chaincode response 500, missing verdict for model SVM
+PASS  replay of an existing validation id  -> chaincode response 500, validation mvmzvh7t-ok1 already recorded
+PASS  consensus label outside {0,1,2}  -> chaincode response 500, invalid consensus result 3
+PASS  confidence outside [0,1]  -> chaincode response 500, confidence 1.500000 outside [0,1]
+PASS  model registration by non-admin organisation (Org2)  -> chaincode response 500, access denied: Org2MSP may not register models
+sequential {
+  n: 200,
+  mean_ms: 2727.1061530000006,
+  p50_ms: 2075.0214999999152,
+  p95_ms: 6280.725599999947,
+  p99_ms: 10147.146999999997,
+  max_ms: 10274.786499999987
+}
+concurrency 10 43.45 tps failed 0
+concurrency 50 57.16 tps failed 0
+query {
+  n: 300,
+  mean_ms: 8.895761000001414,
+  p50_ms: 8.068300000042655,
+  p95_ms: 12.310199999948964,
+  p99_ms: 18.222999999998137,
+  max_ms: 61.800900000031106
+}

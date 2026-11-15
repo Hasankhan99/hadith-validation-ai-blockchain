@@ -1,0 +1,7 @@
+task,cls,source,n,frac_with_diacritics
+binary,Mawdu,MAHADDAT,1902,0.0
+binary,Sahih,MAHADDAT,19114,0.0
+ternary,Daif,LK-Daif,2286,1.0
+ternary,Daif,NAH-Daif,752,0.3178191489361702
+ternary,Mawdu,MAHADDAT,1902,0.0
+ternary,Sahih,MAHADDAT,19114,0.0

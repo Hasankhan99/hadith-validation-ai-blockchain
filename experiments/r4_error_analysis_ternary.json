@@ -1,0 +1,24 @@
+{
+ "confusion_matrix": [
+  [
+   195,
+   6,
+   33
+  ],
+  [
+   60,
+   53,
+   267
+  ],
+  [
+   5,
+   9,
+   2351
+  ]
+ ],
+ "n_errors": 380,
+ "mean_conf_errors": 0.6437253246254063,
+ "mean_conf_correct": 0.7896272183582985,
+ "mean_words_errors": 33.09736842105263,
+ "mean_words_all": 43.07250755287009
+}

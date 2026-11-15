@@ -1,0 +1,42 @@
+{
+  "v1_total": 26320,
+  "v1_known_fabricated_found": 2370,
+  "v1_known_fabricated_labelled_sahih": 2368,
+  "v1_lk_records": 102,
+  "v1_lk_mean_words": 6.2,
+  "official_train_rows": 21248,
+  "official_train_degree1": 1962,
+  "official_train_degree1_in_MAHADDATcsv": 1962,
+  "official_dev_rows": 2656,
+  "official_dev_degree1": 245,
+  "official_dev_degree1_in_MAHADDATcsv": 245,
+  "official_test_rows": 2657,
+  "official_test_degree1": 245,
+  "official_test_degree1_in_MAHADDATcsv": 245,
+  "v2": {
+    "train": {
+      "raw": 21228,
+      "dup_removed": 212,
+      "cross_split_removed": 0,
+      "final": 21016,
+      "sahih": 19114,
+      "mawdu": 1902
+    },
+    "val": {
+      "raw": 2651,
+      "dup_removed": 1,
+      "cross_split_removed": 51,
+      "final": 2599,
+      "sahih": 2365,
+      "mawdu": 234
+    },
+    "test": {
+      "raw": 2653,
+      "dup_removed": 4,
+      "cross_split_removed": 48,
+      "final": 2601,
+      "sahih": 2369,
+      "mawdu": 232
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Only needed for the transformer supplement (colab/) and the V3 sanad/context supplement (src_v3/)
+torch==2.6.0
+transformers==4.51.3
+accelerate==1.15.0
+huggingface_hub==0.36.2
+datasets
+sentence-transformers==4.1.0

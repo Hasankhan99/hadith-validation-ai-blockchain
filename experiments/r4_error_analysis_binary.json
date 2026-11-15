@@ -1,0 +1,17 @@
+{
+ "confusion_matrix": [
+  [
+   201,
+   33
+  ],
+  [
+   13,
+   2352
+  ]
+ ],
+ "n_errors": 46,
+ "mean_conf_errors": 0.6807907623201033,
+ "mean_conf_correct": 0.9363410478125723,
+ "mean_words_errors": 97.0,
+ "mean_words_all": 44.14582531742978
+}

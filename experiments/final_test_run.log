@@ -1,0 +1,34 @@
+binary test fitted LR
+binary test fitted RF
+binary test fitted SVM
+binary test fitted CNB
+ternary test fitted LR
+ternary test fitted RF
+ternary test fitted SVM
+ternary test fitted CNB
+                                      mean     std
+task    run               metric                  
+binary  FT-CONS-classical macro_f1  0.9236  0.0005
+                          primary   0.8605  0.0010
+        FT-M-B6           macro_f1  0.9319  0.0000
+                          primary   0.8761  0.0000
+        FT-M-CNB          macro_f1  0.8429  0.0000
+                          primary   0.7160  0.0000
+        FT-M-LR           macro_f1  0.8707  0.0000
+                          primary   0.7684  0.0000
+        FT-M-RF           macro_f1  0.9000  0.0027
+                          primary   0.8170  0.0049
+        FT-M-SVM          macro_f1  0.9327  0.0000
+                          primary   0.8767  0.0000
+ternary FT-CONS-classical macro_f1  0.6846  0.0028
+                          primary   0.6846  0.0028
+        FT-M-B6           macro_f1  0.6971  0.0000
+                          primary   0.6971  0.0000
+        FT-M-CNB          macro_f1  0.5772  0.0000
+                          primary   0.5772  0.0000
+        FT-M-LR           macro_f1  0.6586  0.0000
+                          primary   0.6586  0.0000
+        FT-M-RF           macro_f1  0.5974  0.0055
+                          primary   0.5974  0.0055
+        FT-M-SVM          macro_f1  0.6591  0.0000
+                          primary   0.6591  0.0000

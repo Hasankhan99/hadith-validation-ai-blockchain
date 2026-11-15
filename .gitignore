@@ -1,0 +1,32 @@
+# --- Thesis manuscript, defense paper, private notes (not published before submission/examination) ---
+claude.md
+CLAUDE.md
+paper/
+MS Report/
+thesis/*
+!thesis/RESULTS_LOG.csv
+!thesis/FREEZE_PROTOCOL.md
+!thesis/figures/
+thesis/figures/monogram.jpg
+~$*
+
+# --- Raw third-party datasets: fetched by reproduce/fetch_raw_data.py at pinned commits ---
+data/AR-Sanad-280K/
+data/LK-Hadith-Corpus/
+data/MAHADDAT/
+data/MAHADDAT_TEST/
+
+# --- Caches, large or regenerable artifacts ---
+experiments/v3_cache/
+colab/hadith_v2_colab_pack.zip
+colab/outputs/
+colab/outputs_absent/
+models/
+reproduce/out/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+node_modules/
+.venv/
+venv/
+.claude/

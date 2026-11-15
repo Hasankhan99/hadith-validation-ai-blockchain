@@ -1,0 +1,11 @@
+﻿binary val fitted LR
+binary val fitted RF
+binary val fitted SVM
+binary val fitted CNB
+binary validation primary: {'M-LR': 0.7985, 'M-RF': 0.8474, 'M-SVM': 0.8991, 'M-CNB': 0.7602, 'M-B6': 0.8828, 'CONS-classical': 0.9006} -> headline CONS-classical tau {'CONS-classical': 0.75}
+ternary val fitted LR
+ternary val fitted RF
+ternary val fitted SVM
+ternary val fitted CNB
+ternary validation primary: {'M-LR': 0.6563, 'M-RF': 0.6079, 'M-SVM': 0.6734, 'M-CNB': 0.5893, 'M-B6': 0.7236, 'CONS-classical': 0.701} -> headline M-B6 tau {'CONS-classical': 0.45}
+manifest written: D:\research paper\experiments\FREEZE_MANIFEST.json

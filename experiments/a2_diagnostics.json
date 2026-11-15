@@ -1,0 +1,70 @@
+{
+ "segmenter_views": {
+  "binary-train": {
+   "n": 21016,
+   "formula": 0.418,
+   "positional": 0.4624,
+   "whole_text": 0.1197,
+   "formula_share_Mawdu": 0.0668,
+   "formula_share_Sahih": 0.4529
+  },
+  "binary-val": {
+   "n": 2599,
+   "formula": 0.4048,
+   "positional": 0.474,
+   "whole_text": 0.1212,
+   "formula_share_Mawdu": 0.0769,
+   "formula_share_Sahih": 0.4372
+  },
+  "ternary-train": {
+   "n": 24054,
+   "formula": 0.367,
+   "positional": 0.4979,
+   "whole_text": 0.1351,
+   "formula_share_Mawdu": 0.0668,
+   "formula_share_Daif": 0.0142,
+   "formula_share_Sahih": 0.4529
+  },
+  "ternary-val": {
+   "n": 2979,
+   "formula": 0.3541,
+   "positional": 0.5126,
+   "whole_text": 0.1333,
+   "formula_share_Mawdu": 0.0769,
+   "formula_share_Daif": 0.0079,
+   "formula_share_Sahih": 0.4372
+  }
+ },
+ "residual_characters_train": {
+  "LK-Daif-label1": {
+   "n": 2286,
+   "frac_with_residual_marks": 0.0,
+   "frac_with_arabic_punctuation": 0.245
+  },
+  "MAHADDAT-label0": {
+   "n": 1902,
+   "frac_with_residual_marks": 0.0,
+   "frac_with_arabic_punctuation": 0.3365
+  },
+  "MAHADDAT-label2": {
+   "n": 19114,
+   "frac_with_residual_marks": 0.0,
+   "frac_with_arabic_punctuation": 0.4452
+  },
+  "NAH-Daif-label1": {
+   "n": 752,
+   "frac_with_residual_marks": 0.0,
+   "frac_with_arabic_punctuation": 0.2965
+  }
+ },
+ "binary_val_error_length_words": {
+  "errors_n": 46,
+  "errors_mean": 97.0,
+  "errors_median": 21.5,
+  "errors_max": 1843,
+  "errors_mean_without_longest": 58.2,
+  "all_n": 2599,
+  "all_mean": 44.1,
+  "all_median": 28.0
+ }
+}

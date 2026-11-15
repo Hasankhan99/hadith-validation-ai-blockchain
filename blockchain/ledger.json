@@ -1,0 +1,37 @@
+{
+  "models": {
+    "model_lr": {
+      "model_id": "model_lr",
+      "model_name": "Logistic Regression",
+      "sha256_hash": "67660f69d28736e71110399ec60237835bda7a6cfc60186b522e767c7bd0db4c",
+      "accuracy_weight": 0.9719,
+      "registered_at": "2026-09-22T21:49:10Z"
+    },
+    "model_rf": {
+      "model_id": "model_rf",
+      "model_name": "Random Forest",
+      "sha256_hash": "3d44d9e06e4060b5c35dc81bca15e2b90ba3e036187b1959c9d76f49a6781d09",
+      "accuracy_weight": 0.978,
+      "registered_at": "2026-09-22T21:49:11Z"
+    }
+  },
+  "transactions": [
+    {
+      "tx_id": "0xfdc55a5c76e8f0823b3532c03b36b77bddb703ee4f35b0d27d3e1ffc284fe3cc",
+      "hadith_hash": "6c6df7dcc6efceb30b2bec24315d1955a24a1bba85098e0c83045b0c097cfd32",
+      "consensus_result": 0,
+      "consensus_label": "Mawdu (Fabricated)",
+      "confidence_score": 1.0,
+      "model_verdicts": {
+        "model_lr": 0,
+        "model_rf": 0
+      },
+      "model_hashes": {
+        "model_lr": "67660f69d28736e71110399ec60237835bda7a6cfc60186b522e767c7bd0db4c",
+        "model_rf": "3d44d9e06e4060b5c35dc81bca15e2b90ba3e036187b1959c9d76f49a6781d09"
+      },
+      "timestamp": "2026-09-22T21:49:11Z",
+      "block_index": 1
+    }
+  ]
+}
